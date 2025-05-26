@@ -37,6 +37,9 @@
         7. clsx o classnames (Para manejar clases dinamicas facilmente)
             npm install clsx
 
+        8. Redireccion para Vite
+            npm i vite-plugin-static-copy -D
+
 4. Configurar React Router DOM
     De esta forma envolvemos la aplicacion con el router
     En la Raiz del proyecto dentro del archivo main.jsx haremos las importaciones de React y react router dom correspondientes
