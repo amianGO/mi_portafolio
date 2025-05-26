@@ -2,6 +2,7 @@ import {motion} from 'framer-motion'
 import { Link } from 'react-router-dom';
 import SobreMi from '../components/SobreMi'
 import Experience from '../components/Experience';
+import Persona from '../assets/Persona.png'
 
 
 
@@ -13,7 +14,7 @@ const Hero = () => {
             
             
             <motion.img 
-            src='/Persona.png'
+            src={Persona}
             alt='Foto de Perfil'
             className='w-60 h-80  rounded-full object-cover border-2 border-white shadow-lg mb-6'
             initial = {{ opacity: 0, scale: 0.5}}
