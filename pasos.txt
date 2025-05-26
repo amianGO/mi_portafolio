@@ -1,0 +1,43 @@
+1. Crear el Proyecto de React con -> npx create-react-app <Nombre_del_Proyecto>
+2. Personalizar el proyecto creado (Eliminar Archivos, Paquetes y crear los tuyos)
+    Ejemplo: 
+        public/
+            index.html
+        src/
+            assets/             <Imagenes, Iconos, Logos>
+            components/         <Componentes reutilizables (Navbar, Footer, Cards, etc)
+            pages/              <Paginas Completas (Inicio, SobreMi, Proyectos, Contacto)
+            routes/             <Rutas para la division por paginas>
+            utils/              <Funciones, Constantes, Helpers>
+            App.js
+            index.js
+            reportWebVitals.js
+3. Instalar las dependencias comunes para facilitar el proceso de creacion
+    Ejemplo:
+        1. Tailwind CSS
+            npm install -D tailwindcss postcss autoprefixer y npm install -D @tailwindcss/postcss
+            npx tailwindcss init -p
+            (Aqui hay que configurar tailwind.config.js, postcss.config.js y añadir los estilos al index.css)
+
+        2. Reac Router DOM (Para Navegacion entre paginas)
+            npm install react-router-DOM
+        
+        3. Framer Motion (Para animaciones Suaves)
+            npm install framer-motion
+        
+        4. React Icons (Iconos)
+            npm install react-icons 
+        
+        5. Emailjs (Enviar Correos desde un formulario)
+            npm install @emailjs/browser
+        
+        6. Axios (Si hay que consumir APIs)
+            npm install axios
+
+        7. clsx o classnames (Para manejar clases dinamicas facilmente)
+            npm install clsx
+
+4. Configurar React Router DOM
+    De esta forma envolvemos la aplicacion con el router
+    En la Raiz del proyecto dentro del archivo main.jsx haremos las importaciones de React y react router dom correspondientes
+    tambien en Apps.jsx lo modificaremos importando y utilizando las rutas
