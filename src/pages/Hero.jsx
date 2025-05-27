@@ -3,14 +3,15 @@ import { Link } from 'react-router-dom';
 import SobreMi from '../components/SobreMi'
 import Experience from '../components/Experience';
 import Persona from '../assets/Persona.png'
-
-
+import Estudios from '../components/Estudios';
+import ScrollNav from '../components/ScrollNav';
 
 const Hero = () => {
     return (
        
         <>
-        <section className="min-h-screen min-w-screen flex flex-col items-center justify-center bg-gray-900 text-white px-4 text-center">
+        <ScrollNav/>
+        <section id='inicio' className="min-h-screen min-w-screen flex flex-col items-center justify-center bg-gray-900 text-white px-4 text-center">
             
             
             <motion.img 
@@ -56,6 +57,8 @@ const Hero = () => {
 
         <SobreMi />
         <Experience />
+        <Estudios />
+
         </>
    
     )
