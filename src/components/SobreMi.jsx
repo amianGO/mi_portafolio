@@ -33,22 +33,22 @@ const SobreMi = () => {
 
             <div className="flex flex-col gap-6">
                 <motion.div 
-                    className="bg-gray-100 p-6 rounded-xl shadow-md max-w-md"
+                    className="bg-gray-800 p-6 rounded-xl shadow-md max-w-md"
                     initial={{opacity: 0, y: 50}}
                     whileInView={{opacity: 1, y: 0}}
                     transition={{type: 'spring', stiffness: 200}}
                     whileHover={{scale: 1.05}}
                     viewport={{once: false}}
                     >
-                    <h3 className="text-xl font-semibold mb-2 text-black">Algo Sobre Mi</h3>
-                    <p className="text-black">
+                    <h3 className="text-xl font-semibold mb-2 text-white">Algo Sobre Mi</h3>
+                    <p className="text-white">
                         Soy Desarrollador de Software con Conocimientos en React, Java, Spring, Node.js, Desarrollo Web
                     </p>
 
                 </motion.div>
 
                 <motion.div
-                    className="bg-gray-100 p-6 rounded-xl shadow-md max-w-md text-black"
+                    className="bg-gray-800 p-6 rounded-xl shadow-md max-w-md text-white"
                     initial={{opacity: 0, y: 50}}
                     whileInView={{opacity: 1, y:0}}
                     transition={{type: 'spring', stiffness: 200}}
@@ -64,7 +64,7 @@ const SobreMi = () => {
                 </motion.div>
 
                 <motion.div
-                    className="bg-gray-300 p-6 rounded-xl shadow-md max-w-md text-black"
+                    className="bg-gray-800 p-6 rounded-xl shadow-md max-w-md text-white"
                     initial={{opacity: 0, y:50}}
                     whileHover={{scale: 1.05}}
                     transition={{type: 'spring', stiffness: 200}}
@@ -81,7 +81,7 @@ const SobreMi = () => {
                 </motion.div>
 
                 <motion.div
-                    className="bg-gray-300 p-6 rounded-xl shadow-md max-w-md text-black"
+                    className="bg-gray-100 p-6 rounded-xl shadow-md max-w-md text-black"
                     initial={{opacity:0, y:50}}
                     whileHover={{scale: 1.05}}
                     transition={{type: 'spring', stiffness: 200}}

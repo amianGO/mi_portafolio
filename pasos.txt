@@ -39,6 +39,9 @@
 
         8. Redireccion para Vite
             npm i vite-plugin-static-copy -D
+        
+        9. Animacion de Tipeo
+            npm install react-simple-typewriter
 
 4. Configurar React Router DOM
     De esta forma envolvemos la aplicacion con el router

@@ -1,5 +1,4 @@
 
-import { a, div } from "framer-motion/client";
 import { useEffect, useState } from "react";
 
 const sections = [
