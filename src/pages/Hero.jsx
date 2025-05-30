@@ -78,6 +78,10 @@ const Hero = () => {
 
                 <DiReact title='React' className='hover:text-blue-400 transition'/>
 
+                <DiDatabase title='Database' className='hover:text-yellow-500'/>
+
+                <DiJavascript title='JavaScript' className='hover:text-yellow-500'/>
+
             </motion.div>
             <motion
                 
