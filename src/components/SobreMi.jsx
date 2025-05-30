@@ -105,7 +105,7 @@ const SobreMi = () => {
           {cards.map((card, index) => (
             <motion.div
               key={card.id}
-              className="w-[448px] bg-gray-800 p-7 rounded-xl shadow-md cursor-pointer"
+              className="max-w-md bg-gray-800 p-7 rounded-xl shadow-md cursor-pointer"
               initial = {{opacity: 0, y: -10}}
               whileInView={{opacity: 1, y: 0}}
               whileHover={{scale: 1.05}}
