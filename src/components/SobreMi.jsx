@@ -105,7 +105,7 @@ const SobreMi = () => {
           {cards.map((card, index) => (
             <motion.div
               key={card.id}
-              className="bg-gray-800 p-6 rounded-xl shadow-md max-w-md cursor-pointer"
+              className="w-[448px] bg-gray-800 p-7 rounded-xl shadow-md cursor-pointer"
               initial = {{opacity: 0, y: -10}}
               whileInView={{opacity: 1, y: 0}}
               whileHover={{scale: 1.05}}
@@ -113,8 +113,8 @@ const SobreMi = () => {
               viewport={{once: false}}
               onClick={() => toogleCard(index)}
             >
-              <div className="flex items-center justify-between">
-                <div className="flex gap-3 text-2xl">
+              <div className="flex items-center justify-between ">
+                <div className="flex gap-20 text-2xl ">
                   {" "}
                   {card.iconos.map((icon, i) => (
                     <span key={i}>{icon}</span>

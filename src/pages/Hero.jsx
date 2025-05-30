@@ -19,7 +19,7 @@ const Hero = () => {
             <motion.img 
             src={Persona}
             alt='Foto de Perfil'
-            className='w-60 h-80  rounded-full object-cover border-2 border-white shadow-lg mb-6'
+            className='w-60 h-80  rounded-full object-cover border-2 border-gray-800 shadow-lg mb-6'
             initial = {{ opacity: 0, scale: 0.5}}
             whileInView={{opacity: 1, scale: 1}}
             transition={{ duration: 0.4, delay: 0.4}}

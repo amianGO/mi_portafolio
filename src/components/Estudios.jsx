@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { div, h3 } from "framer-motion/client";
 import { useState } from "react";
+import { FaGraduationCap, FaSchool, FaMedal, FaBook } from "react-icons/fa";
 
 const Estudios = () => {
 
@@ -47,10 +47,18 @@ const Estudios = () => {
                             whileInView={{opacity: 1, y: 0}}
                             viewport={{once: false}}
                             >
-                                Contenido de Estudio 1    
+                                Bachiller Academico  
                             </motion.h3>
                             <div>
+                                <h4>I.E.Tecnico Industrial Simona Duque</h4>
+                                <div>
+                                    <div>
 
+                                    </div>
+                                    <div>
+                                        
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         
@@ -64,10 +72,10 @@ const Estudios = () => {
                                 whileInView={{opacity: 1, y: 0}}
                                 viewport={{once: false}}
                             >
-                                Contenido de Estudio 2
+                                Tecnologia en Desarrollo de Software
                             </motion.h3>
                             <div>
-
+                                
                             </div>
                         </div>
                     }
@@ -80,7 +88,7 @@ const Estudios = () => {
                                 whileInView={{opacity: 1, y: 0}}
                                 viewport={{once: false}}
                             >
-                                Contenido de Estudio 3
+                                Cursos
                             </motion.h3>
                             <div>
 
