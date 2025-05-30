@@ -25,7 +25,7 @@ const Estudios = () => {
       </motion.h2>
 
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-12 border-b border-gray-700 pb-4">
+        <div className="flex flex-row md:flex-row items-center justify-center gap-12 border-b border-gray-700 pb-4">
           {["estudio1", "estudio2", "estudio3"].map((estudio, index) => (
             <motion.button
               key={index}
