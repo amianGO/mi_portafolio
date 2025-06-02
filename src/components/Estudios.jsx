@@ -1,7 +1,17 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FaGraduationCap, FaSchool, FaMedal, FaBook, FaBriefcase } from "react-icons/fa";
+import {
+  FaGraduationCap,
+  FaSchool,
+  FaMedal,
+  FaBook,
+  FaBriefcase,
+  FaUniversity,
+  FaAffiliatetheme,
+} from "react-icons/fa";
 import Graduacion from "../assets/Graduacion.jpg";
+import EnProceso from "../assets/EN_PROCESO.png";
+import { div } from "framer-motion/client";
 
 const Estudios = () => {
   const [selected, setSelected] = useState("estudio1");
@@ -43,6 +53,7 @@ const Estudios = () => {
         </div>
 
         {/* Contenido de las paginas */}
+
         <div className="mt-10 text-center text-2xl">
           {selected === "estudio1" && (
             <div>
@@ -58,12 +69,12 @@ const Estudios = () => {
               <div className="flex flex-col md:flex-row gap-7">
                 {/* Imagen */}
                 <div className="w-full md:w-1/3 flex justify-center">
-                  <motion.figure 
+                  <motion.figure
                     className="w-full max-w-md  p-2 cursor-pointer"
-                    initial = {{opacity: 0, x: -50}}
-                    whileInView={{opacity:1, x: 0}}
-                    whileHover={{scale: 1.05}}
-                    >
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    whileHover={{ scale: 1.05 }}
+                  >
                     <img
                       src={Graduacion}
                       alt="Certificado de Graduacion"
@@ -77,21 +88,23 @@ const Estudios = () => {
                 </div>
 
                 {/* Texto */}
-                <motion.div 
-                    className="w-full md:w-1/1 p-4 "
-                    initial = {{opacity: 0, x: 50}}
-                    whileInView={{opacity: 1, x: 0}}
+                <motion.div
+                  className="w-full md:w-1/1 p-4 "
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                 >
                   <div className="flex flex-row gap-2 justify-center">
-                    <FaGraduationCap className="text-2xl text-blue-700"/>
+                    <FaGraduationCap className="text-2xl text-blue-700" />
                     <h4 className="text-lg font-medium">
-                    I.E Tecnico Industrial Simona Duque
-                  </h4>
+                      I.E Tecnico Industrial Simona Duque
+                    </h4>
                   </div>
 
                   <div className="flex flex-row gap-2 justify-normal mt-3">
                     <FaSchool className="text-2xl text-gray-400" />
-                    <h5 className="font-medium text-justify text-lg">Informacion Basica</h5>
+                    <h5 className="font-medium text-justify text-lg">
+                      Informacion Basica
+                    </h5>
                   </div>
 
                   <ul className="list-disc pl-5 mt-2 text-sm text-gray-100 text-justify">
@@ -100,28 +113,36 @@ const Estudios = () => {
                     <li>Modalidad: Presencial</li>
                   </ul>
 
-                    <div className="flex flex-row gap-2 mt-3 justify-normal">
-                        <FaBriefcase className="text-2xl text-amber-800" />
-                        <h5 className="font-medium text-justify text-lg">Experiencia Y Participacion</h5>    
-                    </div>
-                    
-                    <ul className="pl-5 mt-2 text-sm text-gray-100 text-justify">
-                        <li>Participe en Teatro y Deporte con Medalla de reconocimiento</li>
-                        <li>Representante de Grupo</li>
-                        <li>Participacion en Cuidado de Mayores</li>
-                    </ul>
+                  <div className="flex flex-row gap-2 mt-3 justify-normal">
+                    <FaBriefcase className="text-2xl text-amber-800" />
+                    <h5 className="font-medium text-justify text-lg">
+                      Experiencia Y Participacion
+                    </h5>
+                  </div>
 
-                    <div className="flex flex-row gap-2 justify-normal mt-3">
-                        <FaMedal className=" text-2xl text-yellow-400" />
-                        <h5 className="font-medium text-justify text-lg">Habilidades Adquiridas</h5>
-                    </div>
-                    <ul className="pl-5 mt-2 text-sm text-justify text-gray-100 list-disc">
-                        <li>Trabajo en Equipo</li>
-                        <li>Responsabilidad</li>
-                        <li>Comunicacion</li>
-                        <li>Uso de Herramientas Tec (HTML, CSS , JS, Ofimaticas)</li>
-                    </ul>
+                  <ul className="pl-5 mt-2 text-sm text-gray-100 text-justify">
+                    <li>
+                      Participe en Teatro y Deporte con Medalla de
+                      reconocimiento
+                    </li>
+                    <li>Representante de Grupo</li>
+                    <li>Participacion en Cuidado de Mayores</li>
+                  </ul>
 
+                  <div className="flex flex-row gap-2 justify-normal mt-3">
+                    <FaMedal className=" text-2xl text-yellow-400" />
+                    <h5 className="font-medium text-justify text-lg">
+                      Habilidades Adquiridas
+                    </h5>
+                  </div>
+                  <ul className="pl-5 mt-2 text-sm text-justify text-gray-100 list-disc">
+                    <li>Trabajo en Equipo</li>
+                    <li>Responsabilidad</li>
+                    <li>Comunicacion</li>
+                    <li>
+                      Uso de Herramientas Tec (HTML, CSS , JS, Ofimaticas)
+                    </li>
+                  </ul>
                 </motion.div>
               </div>
             </div>
@@ -137,7 +158,79 @@ const Estudios = () => {
               >
                 Tecnologia en Desarrollo de Software
               </motion.h3>
-              <div></div>
+
+              <div className="flex flex-col md:flex-row gap-7">
+                {/* Image */}
+                <div className="w-full md:w-1/3 flex justify-center">
+                  <motion.figure
+                    className="w-full max-w-md p-2 cursor-pointer"
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    <img
+                      src={EnProceso}
+                      alt="En Proceso"
+                      className="w-full h-auto object-contain"
+                      onClick={() => setIsOpen(true)}
+                    />
+                    <figcaption className="text-center text-sm mt-2">
+                      Actualmente Cursando 5to Semestre
+                    </figcaption>
+                  </motion.figure>
+                </div>
+
+                {/* Texto */}
+                <motion.div
+                  className="w-full md:w-1/1 p-4"
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                >
+                  <div className="flex flex-row gap-2 justify-center ">
+                    <FaUniversity className="text-2xl text-amber-800" />
+                    <h4 className="text-lg font-medium">
+                      I.Universitaria Digital de Antioquia
+                    </h4>
+                  </div>
+
+                  <div className="flex flex-row gap-2 justify-normal mt-3">
+                    <FaBook className="text-2xl text-gray-400" />
+                    <h5 className="font-medium text-justify text-lg">
+                      Informacion Basica
+                    </h5>
+                  </div>
+
+                  <ul className="list-disc pl-5 mt-2 text-sm text-gray-100 text-justify">
+                    <li>Inicio - 2023, fin - 2025</li>
+                    <li>Ciudad y Pais: Medellin, Colombia</li>
+                    <li>Modalidad: Virtual</li>
+                  </ul>
+
+                  <div className="flex flex-row gap-2 justify-normal mt-3">
+                    <FaAffiliatetheme className="text-2xl text-cyan-400"/>
+                    <h5 className="font-medium text-justify text-lg">Experiencia y Participacion</h5>
+                  </div>
+
+                  <ul className="list-disc pl-5 mt-2 text-sm text-gray-100 text-justify">
+                    <li>Participacion en Semilleros de Lectura e Idiomas</li>
+                    <li>Aprendizaje Autonomo</li>
+                    <li>Continua comunicacion y adaptacion en ambientes remotos</li>
+                  </ul>
+
+                  <div className="flex flex-row gap-2 justify-normal mt-3">
+                    <FaMedal className="text-2xl text-yellow-400" />
+                    <h5 className="font-medium text-justify text-lg">Habilidades Adquiridas</h5>
+                  </div>
+
+                  <ul className="pl-5 list-disc mt-2 text-sm text-gray-100 text-justify">
+                    <li>Adaptacion Rapida a entornos Remotos</li>
+                    <li>Node.js, JavaScript, HTML, CSS, Java, Python</li>
+                    <li>Uso de plataformas online</li>
+                    <li>Resolucion de Problemas de alto nivel</li>
+                  </ul>
+
+                </motion.div>
+              </div>
             </div>
           )}
 
@@ -158,7 +251,7 @@ const Estudios = () => {
       </div>
 
       {/* Modal al final del renderizado para abrir la imagen */}
-      {isOpen && (
+      {selected ==="estudio1" &&isOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
           onClick={() => setIsOpen(false)}
@@ -166,9 +259,21 @@ const Estudios = () => {
           <img
             src={Graduacion}
             alt="Certificado Ampliado"
-            className="max-w-full max-h-full"
+            className="max-w-md max-h-full"
           />
         </div>
+      )}
+      {selected === "estudio2" && isOpen && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+          onClick={() => setIsOpen(false)}
+          >
+          <img 
+            src={EnProceso} 
+            alt="Proceso Amplificado" 
+            className="max-w-md max-h-md"
+            />
+        </div>    
       )}
     </section>
   );

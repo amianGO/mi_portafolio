@@ -29,7 +29,7 @@ const ScrollNav = () => {
     }, []);
 
     return (
-        <div className="fixed left-5 top-1/2 transform -translate-y-1/2 z-50 flex flex-col gap-4">
+        <div className="fixed left-1 top-1/2 transform -translate-y-1/2 z-50 flex flex-col gap-4 md:left-5">
             {sections.map((section) => (
                 <a 
                     key={section.id}
