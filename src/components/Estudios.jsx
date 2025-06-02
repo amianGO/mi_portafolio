@@ -11,9 +11,17 @@ import {
 } from "react-icons/fa";
 import Graduacion from "../assets/Graduacion.jpg";
 import EnProceso from "../assets/EN_PROCESO.png";
-import { div } from "framer-motion/client";
+import { SiUdemy } from "react-icons/si";
+import ImgDownload from "./ImgDownload";
 
 const Estudios = () => {
+  
+  const estudios = [
+    {id: "estudio1", label:"Bachiller"},
+    {id: "estudio2", label:"Universidad"},
+    {id: "estudio3", label:"Cursos"}
+  ]
+
   const [selected, setSelected] = useState("estudio1");
 
   //Modal para abrir la Imagen
@@ -36,18 +44,20 @@ const Estudios = () => {
 
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-row md:flex-row items-center justify-center gap-12 border-b border-gray-700 pb-4">
-          {["estudio1", "estudio2", "estudio3"].map((estudio, index) => (
+          {estudios.map(({id, label}) => (
             <motion.button
-              key={index}
-              onClick={() => setSelected(estudio)}
-              className={`relative text-lg font-medium transition duration-100 ${
-                selected === estudio
+              key={id}
+              onClick={() => setSelected(id)}
+              className={`relative text-lg font-medium ${
+                selected === id
                   ? "after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-full after:bg-white"
                   : "text-gray-400:"
               }`}
               whileHover={{ scale: 1.08 }}
+              initial={{opacity: 0, y: 50}}
+              whileInView={{opacity: 1, y: 0}}
             >
-              {`Estudio ${index + 1}`}
+              {label}
             </motion.button>
           ))}
         </div>
@@ -244,7 +254,53 @@ const Estudios = () => {
               >
                 Cursos
               </motion.h3>
-              <div></div>
+
+              <div className="grid grid-flow-col md:grid-flow-col gap-7">
+                <motion.div
+                  className="w-full md:w-1/1 p-4"
+                  initial={{opacity: 0, y: 50}}
+                  whileInView={{opacity: 1, y: 0}}
+                  viewport={{once: false}}
+                >
+                  <div className="flex flex-row gap-2 justify-normal mt-3">
+                    <SiUdemy className="text-2xl text-purple-500"/>
+                    <h4 className="text-lg font-medium">Master Completo en Java de cero a Experto (+180hrs)</h4>
+                  </div>
+
+                  <div className="pl-5">
+                    <div className="flex flex-row gap-2 justify-normal mt-3">
+                      <h5 className="font-medium text-justify text-lg">Conocimientos</h5>
+                    </div>
+
+                    <ul className="list-disc pl-5 mt-2 text-sm text-justify text-gray-100">
+                      <li>Java EE, Java Fx, Java Swing</li>
+                      <li>Java SpringBoot, Spring Security</li>
+                      <li>API Rest, API</li>
+                      <li>Hibernate, SQL, JDBC</li>
+                      <ImgDownload />
+                    </ul>
+                  </div>
+
+                  <div className="flex flex-row gap-2 justify-normal mt-3">
+                    <SiUdemy className="text-2xl text-purple-500"/>
+                    <h4 className="text-lg font-medium">Android y Kotlin Cero a Profesional (+45 hrs)</h4>
+                  </div>
+
+                  <div className="pl-5">
+                    <div className="mt-3">
+                      <h5 className="font-medium text-justify text-lg">Conocimientos</h5>
+                    </div>
+                    <ul className="list-disc pl-5 mt-2 text-sm text-justify text-gray-100">
+                      <li>SQlite, API, CRUD</li>
+                      <li>Layouts</li>
+                      <li>Authenticacion, Oauth</li>
+                      <li>GSON</li>
+                      <ImgDownload />
+                    </ul>
+                  </div>
+
+                </motion.div>
+              </div>
             </div>
           )}
         </div>
