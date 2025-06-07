@@ -1,11 +1,11 @@
-
 import { useEffect, useState } from "react";
 
 const sections = [
     {id: 'inicio', label: 'inicio'},
     {id: 'sobre-mi', label: 'Sobre mi'},
     {id: 'Experiencia', label: 'Experiencia'},
-    {id: 'Estudios', label: 'Mis Estudios'}
+    {id: 'Estudios', label: 'Mis Estudios'},
+    {id: 'Contacto', label: 'Redes y Contacto'}
 ];
 
 const ScrollNav = () => {

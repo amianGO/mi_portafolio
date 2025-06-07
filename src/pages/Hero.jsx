@@ -5,6 +5,7 @@ import Experience from '../components/Experience';
 import Persona from '../assets/Persona.png'
 import Estudios from '../components/Estudios';
 import ScrollNav from '../components/ScrollNav';
+import ContactForm from '../components/ContactForm';
 import { DiDart,DiJava,DiMysql,DiMongodb,DiReact,DiJavascript, DiDatabase, } from 'react-icons/di';
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -24,6 +25,22 @@ const Hero = () => {
             whileInView={{opacity: 1, scale: 1}}
             transition={{ duration: 0.4, delay: 0.4}}
             />
+            <motion.span 
+                className='py-3 text-sm font-semibold'
+                initial = {{opacity: 0, y: 30}}
+                whileInView={{opacity: 1, y: 0}}
+                transition = {{duration: 0.8, delay: 0.3}}
+            >
+                <Typewriter 
+                    words={['!Aviso, Si estas en Movil, la experiencia se disfruta mejor, con el movil de lado¡']}
+                    loop={0} // 0 = Infinito
+                    cursor
+                    cursorStyle = "_"
+                    typeSpeed={100}
+                    deleteSpeed={90}
+                    delaySpeed={1500}
+                />
+            </motion.span>
             
 
             <motion.h1 className="text-4xl md:text-6xl font-bold mb-4"
@@ -83,24 +100,13 @@ const Hero = () => {
                 <DiJavascript title='JavaScript' className='hover:text-yellow-500'/>
 
             </motion.div>
-            <motion
-                
-                initial = {{ opacity: 0, y: 20}}
-                animate = {{ opacity: 1, y: 0}}
-                transition={{ duration: 0.5, delay: 0.9}}
-            >
-                <Link
-                    to="/contacto"
-                    className='mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-lg transition-colors'
-                 > Contactame
-                </Link>
-            </motion>
+           
         </section>
 
         <SobreMi />
         <Experience />
         <Estudios />
-
+        <ContactForm />
         </>
    
     )
