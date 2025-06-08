@@ -88,7 +88,7 @@ const Estudios = () => {
                     <img
                       src={Graduacion}
                       alt="Certificado de Graduacion"
-                      className="w-full h-auto object-contain"
+                      className="w-full max-w-sm md:max-w-md h-auto object-contain"
                       onClick={() => setIsOpen(true)}
                     />
                     <figcaption className="text-center text-sm mt-2">
@@ -181,7 +181,7 @@ const Estudios = () => {
                     <img
                       src={EnProceso}
                       alt="En Proceso"
-                      className="w-full h-auto object-contain"
+                      className="w-full max-w-sm md:max-w-md h-auto object-contain"
                       onClick={() => setIsOpen(true)}
                     />
                     <figcaption className="text-center text-sm mt-2">

@@ -1,14 +1,12 @@
 /* Paso 4 Inicio*/
 import {Routes, Route, BrowserRouter} from 'react-router-dom'
 import Hero from './pages/Hero'
-import ContactForm from './components/contactForm'
 
 function App(){
   return (
     
       <Routes>
         <Route path='/' element={<Hero />} />
-        <Route path='/contacto' element={<ContactForm />} />
         <Route path='*' element={<div className='text-red-500'>404</div>} />
       </Routes>
     
