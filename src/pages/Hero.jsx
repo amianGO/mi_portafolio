@@ -12,7 +12,7 @@ import { Typewriter } from 'react-simple-typewriter';
 const Hero = () => {
     return (
        
-        <div className='overflow-x-hidden w-full'>
+        <div className='overflow-x-hidden '>
         <ScrollNav/>
         <section id='inicio' className="min-h-screen min-w-screen flex flex-col items-center justify-center bg-gray-900 text-white px-4 text-center md:min-h-screen md:min-w-screen">
             

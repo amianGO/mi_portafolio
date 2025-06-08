@@ -42,8 +42,8 @@ const Estudios = () => {
         Mis Estudios
       </motion.h2>
 
-      <div className="max-w-6xl mx-auto">
-        <div className="flex flex-row md:flex-row items-center justify-center gap-12 border-b border-gray-700 pb-4">
+      <div className="max-w-5xl mx-auto">
+        <div className="flex flex-row md:flex-row items-center justify-center gap-5 md:gap-12 border-b border-gray-700 pb-4">
           {estudios.map(({id, label}) => (
             <motion.button
               key={id}
@@ -88,7 +88,7 @@ const Estudios = () => {
                     <img
                       src={Graduacion}
                       alt="Certificado de Graduacion"
-                      className="w-full max-w-sm md:max-w-md h-auto object-contain"
+                      className="w-full max-w-[280px] md:max-w-md h-auto object-contain"
                       onClick={() => setIsOpen(true)}
                     />
                     <figcaption className="text-center text-sm mt-2">
@@ -181,7 +181,7 @@ const Estudios = () => {
                     <img
                       src={EnProceso}
                       alt="En Proceso"
-                      className="w-full max-w-sm md:max-w-md h-auto object-contain"
+                      className="w-full max-w-[280px] md:max-w-md h-auto object-contain"
                       onClick={() => setIsOpen(true)}
                     />
                     <figcaption className="text-center text-sm mt-2">
@@ -255,7 +255,7 @@ const Estudios = () => {
                 Cursos
               </motion.h3>
 
-              <div className="grid grid-flow-col md:grid-flow-col gap-7">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
                 <motion.div
                   className="w-full md:w-1/1 p-4"
                   initial={{opacity: 0, y: 50}}
