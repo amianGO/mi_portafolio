@@ -181,7 +181,7 @@ const Estudios = () => {
                     <img
                       src={EnProceso}
                       alt="En Proceso"
-                      className="w-full max-w-[280px] md:max-w-md h-auto object-contain"
+                      className="mx-auto w-full max-w-[280px] md:max-w-md h-auto object-contain"
                       onClick={() => setIsOpen(true)}
                     />
                     <figcaption className="text-center text-sm mt-2">

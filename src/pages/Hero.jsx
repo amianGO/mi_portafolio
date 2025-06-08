@@ -2,7 +2,7 @@ import {motion} from 'framer-motion'
 import { Link } from 'react-router-dom';
 import SobreMi from '../components/SobreMi'
 import Experience from '../components/Experience';
-import Persona from '../assets/Persona.png'
+import Yo from '../assets/Yo.png'
 import Estudios from '../components/Estudios';
 import ScrollNav from '../components/ScrollNav';
 import ContactForm from '../components/ContactForm';
@@ -18,9 +18,9 @@ const Hero = () => {
             
             
             <motion.img 
-            src={Persona}
+            src={Yo}
             alt='Foto de Perfil'
-            className='w-60 h-80  rounded-full object-cover border-2 border-gray-800 shadow-lg mb-6'
+            className='w-60 h-80  rounded-full object-cover  border-gray-800 shadow-lg mb-6'
             initial = {{ opacity: 0, scale: 0.5}}
             whileInView={{opacity: 1, scale: 1}}
             transition={{ duration: 0.4, delay: 0.4}}
